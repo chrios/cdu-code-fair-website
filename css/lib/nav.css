@@ -1,3 +1,5 @@
+/*Some code for this section used with modifications from W3C https://www.w3schools.com/css/css_navbar.asp*/
+
 .nav__list {
     list-style-type: none;
     margin: 0;
@@ -11,19 +13,27 @@
 
 .nav__list-item {
     float: left;
+    font-size: 1.5em;
+    height: 100%;
+}
+
+
+.nav__logo {
+	height: 55px;
 }
 
 .nav__list-item a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 14px;
     text-decoration: none;
 }
 
-
-.nav__list-item:last-child {
-    border-right: none;
+/*remove padding from top + bottom of logo */
+li.nav__list-item a.link__logo {
+    padding: 5px;
+    height: 100%;
 }
 
 
