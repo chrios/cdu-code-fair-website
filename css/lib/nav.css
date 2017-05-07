@@ -1,3 +1,37 @@
-.nav__list
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
-.nav__list-item
+.nav__list-item {
+    float: left;
+}
+
+.nav__list-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.nav__list-item:last-child {
+    border-right: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+.nav__list-item a:hover {
+    background-color: #111;
+}
+
+.nav__list-item--active {
+    background-color: #4CAF50;
+}

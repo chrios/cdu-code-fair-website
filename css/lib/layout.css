@@ -1,15 +1,47 @@
-.main__header
+.main__header {
+	margin-bottom: 50px;
+	margin-top: 150px;
+}
 
-.main__container
+.main__container {
+	padding-left: 10px;
+	margin-bottom: 50px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
 
-.main__sub-container
+.main__sub-container {
+	/*width: 40%;
+	float: left;
+	margin-right: 5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;*/
+}
 
-.main__footer
+.main__sub-container:last-child {
+	margin-right: 0;
+}
 
-.content__h1
+.main__footer {
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-.content__h2
+.content__h1 {
+	text-align: center;
+}
 
-.content__h3
+.content__h2 {
+	padding-top: 50px;
+}
 
-.content__text
+.content__h3 {}
+
+.content__text {}
+
+.content__text--header {
+	text-align: center;
+}
