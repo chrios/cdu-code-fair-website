@@ -1,15 +1,23 @@
 .main__header {
-	margin-bottom: 50px;
-	margin-top: 150px;
+	padding-bottom: 100px;
+	padding-top: 150px;
+	color: white;
+	background-color: #333;
 }
 
 .main__container {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 50px;
-	max-width: 800px;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	/*
+	border-color: #999;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 1px;
+	*/
 }
 
 .main__sub-container {
@@ -40,9 +48,11 @@
 	padding-top: 80px;
 }
 
-.content__h3 {}
+.content__h3 {
+}
 
-.content__text {}
+.content__text {
+}
 
 .content__text--header {
 	text-align: center;
