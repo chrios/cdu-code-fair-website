@@ -1,8 +1,11 @@
 .main__header {
+	/*
 	padding-bottom: 100px;
 	padding-top: 150px;
+	*/
 	color: white;
 	background-color: #333;
+	height: 100vh;
 }
 
 .main__container {
@@ -18,6 +21,7 @@
 	border-radius: 10px;
 	border-width: 1px;
 	*/
+	height: 100vh;
 }
 
 .main__sub-container {
@@ -32,19 +36,35 @@
 	margin-right: 0;
 }
 
+.main__break {
+	height: 100vh;
+	background-color: #333;
+	color: white;
+}
+
 .main__footer {
 	width: 100%;
     margin: 0;
     padding-top:14px;
     padding-bottom: 14px;
     text-align: center;
+    background-color: #333;
+    color: white;
+    height: 20vh;
 }
 
 .content__h1 {
 	text-align: center;
+	padding-top: 150px;
 }
 
 .content__h2 {
+	padding-top: 80px;
+	margin-top: 0;
+}
+
+.main__break-h2 {
+	text-align: center;
 	padding-top: 80px;
 }
 
@@ -54,6 +74,20 @@
 .content__text {
 }
 
+.main__break-text {
+	text-align: center;
+}
+
 .content__text--header {
 	text-align: center;
+}
+
+.form__fieldset {
+	margin-left: 10%;
+	margin-right: 10%;
+	border: none;
+}
+
+.form__form {
+
 }
