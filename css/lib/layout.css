@@ -23,7 +23,6 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-
 	font-size: 1.75em;
 	text-shadow: 0 0 3px black;
 }
@@ -33,6 +32,8 @@ p {
 	min-height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .main__sub-container {
@@ -211,3 +212,7 @@ caption {
 }
 
 
+ .content__sponsor--image {
+ 	max-width: 200px;
+ 	margin: 10px;
+ }
