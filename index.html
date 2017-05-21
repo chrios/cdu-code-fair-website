@@ -7,33 +7,43 @@
         <title>CDU Code Fair! | Come and look at CDU student projects! | Industry information, Past events, Dates and times</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <ul class="nav__list">
-            <li class="nav__list-item">
-                <a href="#home" class="link__logo"><img class="nav__logo" src="images/itcodefair_logo.png" alt="CDU Code Fair"></a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#2017-competition">2017 Competition</a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#school-programs">School Programs</a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#history">History</a>
-            </li>
-            <li class="nav__list-item">
-                <a href="#industry-information">IT Industry</a>
-            </li>
-        </ul>
-        <div class="clear_div">
-        </div>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <a href="#home"><img class="nav__logo" src="images/itcodefair_logo.png" alt="CDU Code Fair"></a>
+                </div>
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#2017-competition">2017 Code Fair</a>
+                        </li>
+                        <li>
+                            <a href="#school-programs">School Programs</a>
+                        </li>
+                        <li>
+                            <a href="#history">History</a>
+                        </li>
+                        <li>
+                            <a href="#industry-information">IT Industry</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
         <header class="main__header" >
             <h1 class="content__h1">CDU IT Code Fair</h1>
             <p class="content__text--header">
-            The CDU IT Code Fair is a great display of Charles Darwin University's talented students.
+            The CDU IT Code Fair is a display of Charles Darwin University's talented students.
             </p>
             <p class="content__text--header">
             Come and check out projects by students, learn about industry associations and sign up for events in your high school.
@@ -41,85 +51,95 @@
         </header>
 
         <section id="2017-competition" class="main__container">
-
-            <h2 class="content__h2">About the 2017 competition</h2>
-            <p class="content__text">
-              <div>
-              </div>
-                The code fair is an opportunity to share your coding achievements. Enter the competition of your choice and display your hard work! There will be prizes and rewards for outstanding applicants! The competition is open to all students currently enrolled in an IT course at Charles Darwin University. Both individual and group projects are accepted.
-            </p>
+            <header class="content__header">
+                <h2 class="content__h2">About the 2017 competition</h2>
+                <p class="content__text">
+                    Come and show off your projects at our 2017 code fair.  Open to all Charles Darwin University IT students.
+                </p>
+            </header>
             <article class="main__sub-container">
                 <h3 class="content__h3">Software Competition</h3>
                 <p class="content__text">
-                  The software competition is all about your products (applications, databases, mobile responsive sites and apps). At the event, you will demonstrate working software. What you chose to do is up to you! Find something you're passionate about and <a href="#register-competition">apply to enter the competition</a>.
+                  The software competition is all about your products. Demonstrate your working software. Find something you're passionate about and <a href="#register-competition" class="content__link">apply to enter the competition</a>.
                 </p>
-                <p>
-                  <a class = "button__comp" href="#">Download more information</a>
+                <p class="content__text">
+                  <a class="button__table" href="#">Download more information</a>
                 </p>
-                <h4 class="content__h4">Awards</h4>
-                <p>
-                There will be awards presented to the top student/s in the following categories:
+                <p class="content__text">
+                    <a href="#!" id="table-1-toggle" class="button__table">Software competition rewards</a>
                 </p>
+                <div id="table-1" class="notactive">
                 <table>
-                        <caption>Software Competition Awards</caption>
-                            <tr>
-                                <th>Category</th>
-                                <th>Award</th>
-                            </tr>
-                            <tr>
-                                <td>Overall Innovation Award</td>
-                                <td>$300</td>
-                            </tr>
-                            <tr>
-                                <td>Best Novice Coder(s)</td>
-                                <td>Individual: $200<br><br>Group: $100(per person)</td>
-                            </tr>
-                            <tr>
-                                <td>Best Intermediate Coder(s)<br></td>
-                <td>Individual: $200<br><br>Group: $100(per person)</td>
-                            </tr>
-              <tr>
-                                <td>Best Advanced Coder(s)</td>
-                <td>Individual: $200<br><br>Group: $100(per person)</td>
-                <tr>
-                  <td>Peoples Choice Awards</td>
-                  <td>VET: $150<br><br>Undergraduate (1st/2nd year): $150<br><br>Undergraduate (3rd/4th year): $150<br><br>Postgraduate: $150</td>
-                </tr>
-                </tr>
-                        </table>
+                    <caption>Software Competition Awards</caption>
+                    <tr>
+                        <th>Category</th>
+                        <th>Award</th>
+                    </tr>
+                    <tr>
+                        <td>Overall Innovation Award</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Best Novice Coder(s)</td>
+                        <td>Individual: $200<br>
+                        Group: $100(per person)</td>
+                    </tr>
+                    <tr>
+                        <td>Best Intermediate Coder(s)</td>
+                        <td>Individual: $200<br>
+                        Group: $100(per person)</td>
+                    </tr>
+                    <tr>
+                        <td>Best Advanced Coder(s)</td>
+                        <td>Individual: $200
+                        <br>Group: $100(per person)</td>
+                    </tr>
+                    <tr>
+                        <td>Peoples Choice Awards</td>
+                        <td>VET: $150<br>
+                        Undergraduate (1st/2nd year): $150<br>
+                        Undergraduate (3rd/4th year): $150<br>
+                        Postgraduate: $150</td>
+                    </tr>
+                </table>
+                </div>
             </article>
             <article class="main__sub-container">
                 <h3 class="content__h3">Poster Competition</h3>
                 <p class="content__text">
-                  The poster competition is about presenting your IT projects in an attractive and informative poster format. Put your thinking cap on, develop exciting new projects (or polish off some old ones) and stick them on a poster!. Display your poster to the broader University, IT Industry and interested High Schools by <a href="#register-competition">applying to enter</a>.
+                  The poster competition is about presenting your project in an attractive and informative poster format.
+                </p>
+                <p class="content__text">
+                    Put your thinking cap on, develop exciting new projects (or polish off some old ones) and stick them on a poster!
+                </p>
+                <p class="content__text">
+                    Display your poster to the broader University, IT Industry and interested High Schools by <a href="#register-competition" class="content__link">applying to enter</a>.
                 </p>
                 <p>
-                  <a class = "button__comp" href="#">Download more information</a>
+                  <a class="button__table" href="#">Download more information</a>
                 </p>
-                <h4 class="content__h4">Awards</h4>
-                <p>
-                There will be awards presented to the top student/s in the following categories:
-                </p>
+                <a href="#!" id="table-2-toggle" class="button__table">Poster Competition Awards</a>
+                <div id="table-2" class="notactive">
                 <table>
-                        <caption>Poster Competition Awards</caption>
-                            <tr>
-                                <th>Category</th>
-                                <th>Award</th>
-                            </tr>
-                            <tr>
-                                <td>Best Poster</td>
-                                <td>$150</td>
-                            </tr>
-                            <tr>
-                <td>Peoples Choice Awards<br> (UG & PG)</td>
-                <td>$300</td>
-                </tr>
-                </tr>
-                        </table>
+                    <caption>Poster Competition Awards</caption>
+                    <tr>
+                        <th>Category</th>
+                        <th>Award</th>
+                    </tr>
+                    <tr>
+                        <td>Best Poster</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Peoples Choice Awards</td>
+                        <td>$300</td>
+                    </tr>
+                </table>
+                </div>
             </article>
         </section>
 
-        <div id = "register-competition" class="main__break">
+        <div id="register-competition" class="main__break">
             <h2 class="content__h2 main__break-h2">Register Now for our 2017 Code Fair!</h2>
             <p class="content__text main__break-text">
                 Register below for our 2017 code fair. Leave you details and someone will contact you as soon as possible.
@@ -128,41 +148,44 @@
             <fieldset class="form__fieldset">
               <form class="form__form">
                             <legend>Contact Details</legend>
-                                <div class = "form">
-                                    <label for = "contact-name">Full Name</label>
-                                    <input id = "contact-name" name = "name" type = "text" placeholder = "Your full name..">
+                                <div class="form">
+                                    <label for="contact-name">Full Name</label>
+                                    <input id="contact-name" name="name" type="text" placeholder="Your full name..">
                                 </div>
-                                <div class = "form">
-                                    <label for = "contact-email">Email Address</label>
-                                    <input id = "contact-email" name = "email" type = "text" placeholder = "Email..">
+                                <div class="form">
+                                    <label for="contact-email">Email Address</label>
+                                    <input id="contact-email" name="email" type="text" placeholder="Email..">
                                 </div>
-                                <div class = "form">
-                                    <label for = "contact-competition">Choose Competition</label>
-                                    <select id = "contact-competition" name = "competition">
-                                        <option value = "Software">Software</option>
-                                        <option value = "Poster">Poster</option>
+                                <div class="form">
+                                    <label for="contact-competition">Choose Competition</label>
+                                    <select id="contact-competition" name="competition">
+                                        <option value="Software">Software</option>
+                                        <option value="Poster">Poster</option>
                                     </select>
                                 </div>
-                    <div class = "form">
-                      <input id = "submit-button" name = "submit" type = "submit" value = "Submit">
+                    <div class="form">
+                      <input id="submit-button" name="submit" type="submit" value="Submit">
                     </div>
               </form>
             </fieldset>
         </div>
 
         <section id="school-programs" class="main__container">
+            <header class="content__header">
             <h2 class="content__h2">School Programs</h2>
             <p class="content__text">
                 The 2017 Code fair will hold an event for high school students. This code event will engage school students in a fun and interactive learning experience. Students will develop new skills and also get important information on careers within the IT industry.
             </p>
+            </header>
             <article class="main__sub-container">
                 <h3 class="content__h3">Hour of Code</h3>
                 <p class="content__text">
-                  This is an introductory crash course in coding. Students will take their very first steps in writing code and have fun along the way. This Hour of Code Workshop has been sponsored by
-The Discipline of Information Technology, Charles Darwin University in support of the Hour of Code initiative sponsored by Code.org. <a href = "#register-school">Register your interest</a> to be involved in this exciting workshop!
+                  This is an introductory crash course in coding. Students will take their very first steps in writing code and have fun along the way. This Hour of Code Workshop has been sponsored by The Discipline of Information Technology, Charles Darwin University in support of the Hour of Code initiative sponsored by Code.org. <a href="#register-school" class="content__link">Register your interest</a> to be involved in this exciting workshop!
                 </p>
-                <h4 class = "content__h4">Workshop outline</h4>
-                <p class = "content__text">
+            </article>
+            <article class="main__sub-container">
+                <h3 class="content__h3">About Hour of Code</h3>
+                <p class="content__text">
                   Students will work through a set of activities of varying degrees of difficulty; starting simple and progressing to slightly more challenging tasks. The 2017 workshop will involve:
                 </p>
                 <ul>
@@ -172,13 +195,10 @@ The Discipline of Information Technology, Charles Darwin University in support o
                   <li>Advanced coding topics</li>
                   <li>Resources to take home</li>
                 </ul>
-
-
             </article>
         </section>
 
-        <div id = "register-school" class="main__break">
-
+        <div id="register-school" class="main__break">
             <h2 class="content__h2 main__break-h2">Register for our school programs, including Hour of Code!</h2>
             <p class="content__text main__break-text">
                 Please select the school program you are most interested in, or choose all to recieve our information pack including contact details, timings and event costs.
@@ -186,58 +206,89 @@ The Discipline of Information Technology, Charles Darwin University in support o
             <fieldset class="form__fieldset">
               <form class="form__form">
                   <legend>Contact Details</legend>
-                    <div class = "form">
-                      <label for = "contact-name">Full Name</label>
-                      <input id = "contact-name" name = "name" type = "text" placeholder = "Your full name..">
+                    <div class="form">
+                      <label for="contact-name">Full Name</label>
+                      <input id="contact-name" name="name" type="text" placeholder="Your full name..">
                     </div>
-                    <div class = "form">
-                      <label for = "contact-email">Email Address</label>
-                      <input id = "contact-email" name = "email" type = "text" placeholder = "Email..">
+                    <div class="form">
+                      <label for="contact-email">Email Address</label>
+                      <input id="contact-email" name="email" type="text" placeholder="Email..">
                     </div>
-                    <div class = "form">
-                      <label for = "contact-school">School</label>
-                      <input id = "contact-school" name = "school" type = "text" placeholder = "School..">
+                    <div class="form">
+                      <label for="contact-school">School</label>
+                      <input id="contact-school" name="school" type="text" placeholder="School..">
                     </div>
-                    <div class = "form">
-                      <input id = "submit-button" name = "submit" type = "submit" value = "Submit">
+                    <div class="form">
+                      <input id="submit-button" name="submit" type="submit" value="Submit">
                     </div>
               </form>
             </fieldset>
         </div>
 
-        </div>
-
         <section id="history" class="main__container">
-
+            <header class="content__header">
             <h2 class="content__h2">CDU Code Fair History</h2>
             <p class="content__text">
                 The CDU IT Code Fair is an event that brings the IT community together. This is evident in the success of past events. Every year recognision is given to the achievements of students and feedback from all attendees is documented and taken into consideration for the preparation of future events.
             </p>
+            </header>
             <article class="main__sub-container">
                 <h3 class="content__h3">2014 Competition</h3>
                 <p class="content__text">
-              Download the information on the 2014 event, including event structure, competition winners and industry involement. <a class = "button__comp" href="#">2014 Competition</a>
+              Download the information on the 2014 event, including event structure, competition winners and industry involement. 
                 </p>
+                <a class="button__table" href="#">2014 Competition</a>
             </article>
             <article class="main__sub-container">
                 <h3 class="content__h3">2016 Competition</h3>
                 <p class="content__text">
-                  Download the information on the 2016 event, including event structure, competition winners and industry involement. <a class = "button__comp" href="#">2016 Competition</a>
+                  Download the information on the 2016 event, including event structure, competition winners and industry involement. 
                 </p>
+                <a class="button__table" href="#">2016 Competition</a>
             </article>
         </section>
 
         <div class="main__break">
-
-            <h2 class="content__h2 main__break-h2">Photos from previous Code Fair</h2>
-
+            <h2 class="content__h2 main__break-h2">Photos from 2017 Code Fair</h2>
+            <div class="main__break--image-container">
+                <a href="images/2017-photographs/cs-go-gamelog.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/cs-go-gamelog.jpg">
+                </a>
+                <a href="images/2017-photographs/employer-speed-dating.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/employer-speed-dating.jpg">
+                </a>
+                <a href="images/2017-photographs/faculty.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/faculty.jpg">
+                </a>
+                <a href="images/2017-photographs/game.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/game.jpg">
+                </a>
+                <a href="images/2017-photographs/mobile-app.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/mobile-app.jpg">
+                </a>
+                <a href="images/2017-photographs/robot.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/robot.jpg">
+                </a>
+                <a href="images/2017-photographs/student-presentation.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/student-presentation.jpg">
+                </a>
+                <a href="images/2017-photographs/user-testing.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/user-testing.jpg">
+                </a>
+                <a href="images/2017-photographs/industry-presentation.jpg" data-lightbox="2017-competition" data-title="caption">
+                    <img src="images/2017-photographs/thumbnails/industry-presentation.jpg">
+                </a>
+            </div>
         </div>
 
         <section id="industry-information" class="main__container">
+
+            <header class="content__header">
             <h2 class="content__h2">IT Industry</h2>
             <p class="content__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            </header>
             <article class="main__sub-container">
                 <h3 class="content__h3">Associations</h3>
                 <p class="content__text">
@@ -255,6 +306,9 @@ The Discipline of Information Technology, Charles Darwin University in support o
         <footer class="main__footer">
             Made by Sam Hood and Christopher Frew
         </footer>
+        <script type="text/javascript" src="js/vendor/jquery-min.js"></script>
+        <script type="text/javascript" src="js/vendor/lightbox.min.js"></script>
+        <script type="text/javascript" src="js/lib/nav.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
