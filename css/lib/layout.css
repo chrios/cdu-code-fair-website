@@ -216,3 +216,7 @@ caption {
  	max-width: 200px;
  	margin: 10px;
  }
+
+ .main__footer-text {
+ 	padding-top: 50px;
+ }
