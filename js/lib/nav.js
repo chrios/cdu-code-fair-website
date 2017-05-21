@@ -4,20 +4,13 @@ https://www.taniarascia.com/responsive-dropdown-navigation-bar/
 */
 
 (function($) {
-  $(function() {
-    $('nav ul li > a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    });
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-  });
+
   document.querySelector('#nav-toggle').addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('active');        /*sets up the class to be toggled on and of the nav <ul>*/
   });
-  $('#nav-toggle').click(function() {
-    $('nav ul').toggle();
+
+  $('#nav-toggle').click(function() {   /*#nav-toggle is the <a> wrapping the <span>'s of the hamburger menu*/
+    $('nav ul').toggle();               /*toggle() is jquery function which toggles classes on and off*/
   });
+
 })(jQuery);

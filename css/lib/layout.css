@@ -1,10 +1,6 @@
-/*
-
-    font-family: 'Acme', sans-serif;
-
-    font-family: 'Tinos', serif;
-
-*/
+  /*************/
+ /* SET FONTS */
+/*************/
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -12,8 +8,11 @@ body {
 
 p {
 	font-family: 'Poppins', sans-serif;
-
 }
+
+  /***********************/
+ /*  HERO IMAGE STYLES  */
+/***********************/
 
 .main__header {
 	color: white;
@@ -26,6 +25,12 @@ p {
 	font-size: 1.75em;
 	text-shadow: 0 0 3px black;
 }
+
+
+  /*****************/
+ /*  MAIN STYLES  */
+/*****************/
+
 
 .main__container {
 	max-width: 960px;
@@ -40,17 +45,6 @@ p {
 	margin-bottom: 10%;
 }
 
-.content__header {
-	margin-bottom: 10%;
-	text-align: center;
-}
-
-.main__break {
-	min-height: 100vh;
-	background-color: #333;
-	color: white;
-}
-
 .main__footer {
 	width: 100%;
 	text-align: center;
@@ -58,7 +52,21 @@ p {
 	color: white;
 	height: 20vh;
 }
+ 
+ .main__footer-text {
+ 	padding-top: 50px;
+ }
 
+
+  /******************/
+ /* CONTENT STYLES */
+/******************/
+
+
+.content__header {
+	margin-bottom: 10%;
+	text-align: center;
+}
 
 .content__h1 {
 	text-align: center;
@@ -69,23 +77,16 @@ p {
 }
 
 .content__h2 {
-	padding-top: 10%;
+	padding-top: 8%;
 	padding-bottom: 2%;
 	font-size: 2em;
-}
-
-.main__break-h2 {
-	text-align: center;
 }
 
 .content__h3 {
 }
 
 .content__text {
-}
-
-.main__break-text {
-	text-align: center;
+	line-height: 1.6em;
 }
 
 .content__text--header {
@@ -95,7 +96,71 @@ p {
 .content__link {
 	text-decoration: none;
 	border-bottom: 1px solid blue;
+	margin-bottom: 10px;
 }
+
+.content__list {
+
+}
+
+.content__list-item {
+	list-style: square;
+	margin-bottom: 10px;
+}
+
+ .content__sponsor--image {
+ 	max-width: 200px;
+ 	margin: 10px;
+ }
+
+ #industry-information {
+ 	text-align: center;
+ }
+
+
+  /****************/
+ /* BREAK STYLES */
+/****************/
+
+
+.main__break {				/*break is the grey container which breaks up the content with forms etc */
+	min-height: 100vh;
+	background-color: #333;
+	color: white;
+	width: 100%;
+}
+
+.main__break-h2 {
+	text-align: center;
+}
+
+.main__break-text {
+	text-align: center;
+}
+
+.main__break--image-container {
+	text-align: center;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10%;
+}
+
+.main__break--image {		/*styles images in gallery */
+	border-radius: 5px;
+	margin: 5px;
+	max-width: 300px;
+}
+
+.main__break--image-fix {	/* removes underline from between images */
+	text-decoration: none;
+}
+
+
+  /***************/
+ /* FORM STYLES */
+/***************/
+
 
 .form__fieldset {
 	max-width: 960px;
@@ -115,14 +180,6 @@ p {
 	margin-right: auto;
 }
 
-.main__break--image-container {
-	text-align: center;
-	max-width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 10%;
-}
-
 input[type=text], select {
 	width: 100%;
 	padding: 12px 20px;
@@ -132,6 +189,12 @@ input[type=text], select {
 	border-radius: 4px;
 	box-sizing: border-box
 }
+
+
+  /****************/
+ /* TABLE STYLES */
+/****************/
+
 
 table {
 	border-collapse: collapse;
@@ -155,46 +218,34 @@ caption {
 	display: none;
 }
 
-.button__comp {
-	border: grey 1px solid;
-	border-radius: 4px;	
-	color: #333;
-	padding: 15px 0;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 1em;
-	background-color: white;
-	width: 100%;
-}
 
-.button__comp:hover {
-	color: black;
-	border: lightgrey 1px solid;
-}
+  /*****************/
+ /* BUTTON STYLES */
+/*****************/
+
 
 .button__table {
 	margin-top: 30px;
-	font-size: 1.25em;
-	border-bottom: 1px solid #ccc;
-	text-decoration: none;
+	margin-bottom: 10px;		
+	font-size: 1.25em;		
+	border-bottom: 1px solid #ccc;		/*border used as underline */
+	text-decoration: none;				/*instead of text-decoration */
 	color: black;
+	line-height: 2em;		/* fix overlapping border on mobbile */
 }
 
 .button__table:hover {
 	border-bottom: 1px solid black;
+	margin-bottom: 10px;
 }
 
-/*
-.active {
-	display: default;
-}
-.notactive {
-	display: none;
-}
-*/
 
-.notactive {
+  /***************************/
+ /* TABLE TRANSITION STYLES */
+/***************************/
+
+
+.not-visable {
   position:absolute;
   bottom: -100px;
   left: -260px;
@@ -203,20 +254,10 @@ caption {
   height: 1px;
 }
 
-.active {
+.visable {
 	margin-top: 30px;
 	margin-bottom: 30px;
   position: static;
   opacity: 1;
   transition: opacity 1s linear;
 }
-
-
- .content__sponsor--image {
- 	max-width: 200px;
- 	margin: 10px;
- }
-
- .main__footer-text {
- 	padding-top: 50px;
- }
