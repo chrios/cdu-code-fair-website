@@ -14,7 +14,7 @@ nav ul {
 }
 nav ul li {
   float: left;
-  position: relative;
+  /*! position: relative; */
 }
 nav ul li a {
   display: block;
@@ -97,14 +97,14 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .nav-mobile {
     display: block;
   }
 
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 0 0 15px;
   }
   nav ul {
     display: none;
@@ -124,14 +124,18 @@ nav ul li ul li a {
     position: static;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .nav-list {
-    display: block !important;
+    display: block !important; 
   }
 }
 .navigation {
   height: 70px;
   background: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .nav-container {
@@ -140,12 +144,13 @@ nav ul li ul li a {
 }
 
 .brand {
-  position: absolute;
+  /*! position: absolute; */
   padding-left: 20px;
   float: left;
   line-height: 70px;
   text-transform: uppercase;
   font-size: 1.4em;
+  height: 71px;
 }
 .brand a,
 .brand a:visited {
@@ -153,5 +158,10 @@ nav ul li ul li a {
   text-decoration: none;
 }
 .nav__logo {
-	max-height: 70px;
+  max-height: 70px;
+}
+
+a {
+
+    outline: 0;  /*remove annoying dotted outline from elements*/
 }

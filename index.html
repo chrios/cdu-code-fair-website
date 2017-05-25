@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+         <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -22,16 +23,16 @@
                     </div>
                     <ul class="nav-list">
                         <li>
-                            <a href="#2017-competition">2017 Code Fair</a>
+                            <a href="#2017-competition" class="nav-list-item">2017 Code Fair</a>
                         </li>
                         <li>
-                            <a href="#school-programs">School Programs</a>
+                            <a href="#school-programs" class="nav-list-item">School Programs</a>
                         </li>
                         <li>
-                            <a href="#history">History</a>
+                            <a href="#history" class="nav-list-item">History</a>
                         </li>
                         <li>
-                            <a href="#industry-information">IT Industry</a>
+                            <a href="#industry-information" class="nav-list-item">IT Industry</a>
                         </li>
                     </ul>
                 </nav>
@@ -39,10 +40,14 @@
         </section>
 
         <header class="main__header" >
-            <h1 class="content__h1">CDU IT Code Fair</h1>
-            <p class="content__text--header">
-            The CDU IT Code Fair is a display of Charles Darwin University's talented students.
-            </p>
+            <div class="content__header-wrapper">
+                <div class="content__header-wrapper--internal">
+                    <h1 class="content__h1">CDU IT Code Fair</h1>
+                    <p class="content__text--header">
+                        Showcasing Charles Darwin University's talented IT students.
+                    </p>
+                </div>
+            </div>
         </header>
 
         <section id="2017-competition" class="main__container">
@@ -99,7 +104,7 @@
                 </table>
                 </div>
                 <p class="content__text">
-                  <a class="button__table" href="#">>Download more information</a>
+                  <a class="button__table" href="content/CDU_Core-Fair_Software-Competition.pdf">>Download more information</a>
                 </p>
             </article>
             <article class="main__sub-container">
@@ -129,7 +134,7 @@
                 </table>
                 </div>
                 <p>
-                  <a class="button__table" href="#">>Download more information</a>
+                  <a class="button__table" href="content/CDU_Code-Fair_Poster-Competition.pdf">>Download more information</a>
                 </p>
             </article>
         </section>
@@ -159,7 +164,7 @@
                         </select>
                     </div>
                     <div class="form">
-                      <input id="2017-code-fair-submit-button" name="submit" type="submit" value="Submit">
+                      <input  class="form__button--submit" id="2017-code-fair-submit-button" name="submit" type="submit" value="Submit">
                     </div>
               </form>
             </fieldset>
@@ -204,7 +209,7 @@
             <div class="main__break--container">
             <h2 class="content__h2 main__break-h2">Register now for our school programs</h2>
             <p class="content__text main__break-text">
-                Please select the school program you are most interested in, or choose all to recieve our information pack including contact details, timings and event costs.
+                Recieve our information pack including contact details, timings and event costs.
             </p>
             <fieldset class="form__fieldset">
               <form class="form__form">
@@ -221,7 +226,7 @@
                   <input id="school-program-contact-school" name="school" type="text" placeholder="School..">
                 </div>
                 <div class="form">
-                  <input id="school-program-submit-button" name="submit" type="submit" value="Submit">
+                  <input class="form__button--submit" id="school-program-submit-button" name="submit" type="submit" value="Submit">
                 </div>
               </form>
             </fieldset>
@@ -235,18 +240,12 @@
                 The CDU IT Code Fair is an event that brings the IT community together. This is evident in the success of past events. Every year recognision is given to the achievements of students and feedback from all attendees is documented and taken into consideration for the preparation of future events.
             </p>
             </header>
-            <article class="main__sub-container">
+            <article class="main__sub-container--center">
                 <h3 class="content__h3">Codefair 2014</h3>
-                <p class="content__text">
-                    Download information on the 2014 event, including event structure, competition winners and industry involvement. 
-                </p>
                 <a class="button__table" href="content/2014-report.pdf">2014 Report</a>
             </article>
-            <article class="main__sub-container">
+            <article class="main__sub-container--center">
                 <h3 class="content__h3">Codefair 2016</h3>
-                <p class="content__text">
-                  Download information on the 2016 event, including event structure, competition winners and industry involement. 
-                </p>
                 <a class="button__table" href="content/2016-report.pdf">2016 Report</a>
             </article>
         </section>
@@ -349,6 +348,7 @@
             <p class="main__footer-text">Made by Sam Hood and Christopher Frew</p>
         </footer>
         <script type="text/javascript" src="js/vendor/jquery-min.js"></script>
+        <script type="text/javascript" src="js/vendor/smooth-scroll.js"></script>
         <script type="text/javascript" src="js/vendor/lightbox.min.js"></script>
         <script type="text/javascript" src="js/lib/nav.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
