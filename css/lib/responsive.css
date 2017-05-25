@@ -23,4 +23,9 @@
 		padding-bottom: 4%;
 	}
 
+	.brand,
+	.nav__logo {
+		max-width: 50vw;
+	}
+
 }
